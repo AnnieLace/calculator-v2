@@ -22,7 +22,6 @@ for var i = 0; i < 6; i++
 {
     print("\(i) + \(i * 2) = \(add(i, num2: (i*2)))")
 }
-print()
 
 //Subtract num2 from num1
 func subtract(num1: Int, num2: Int) -> Int
@@ -36,7 +35,6 @@ for var i = 0; i < 6; i++
 {
     print("\(i * 2) - \(i) = \(subtract((i*2), num2: i))")
 }
-print()
 
 //Multiply two integers
 func multiply(num1: Int, num2 : Int) -> Int
@@ -50,7 +48,7 @@ for var i = 0; i < 6; i++
 {
     print("\(i) * \(i) = \(multiply(i, num2: i))")
 }
-print()
+
 
 //divide num1 by num2
 func divide(num1: Int, num2: Int) -> Int
@@ -66,7 +64,6 @@ print("6 / 3 = \(divide(6, num2: 3))")
 print("30 / 5 = \(divide(30, num2: 5))")
 print("33 / 11 = \(divide(33, num2: 11))")
 print("50 / 10 = \(divide(50, num2: 10))")
-print()
 
 //Generic math operation - perform specified basic operation on two ints
 func mathOp(num1: Int, num2 : Int, op : (Int, Int) -> Int) -> Int
@@ -87,7 +84,6 @@ print("9 * 2 = \(mathOp(9, num2 : 2, op: multiply))")
 print("Generic function using divide:")
 print("15 / 3 = \(mathOp(15, num2 : 3, op : divide))")
 print("14 / 7 = \(mathOp(14, num2 : 7, op : divide))")
-print()
 
 //Array Fun
 print("Array fun")
@@ -117,7 +113,6 @@ print("Small Array Test returned \(arrAdd(smallArray)), Expected: 10")
 print("Same Array Test returned \(arrAdd(sameArray)), Expected: 3")
 print("Medium Array Test returned \(arrAdd(medArray)), Expected: 15")
 print("Large Array Test returned \(arrAdd(largeArray)), Expected: 20")
-print()
 
 func mul(arr : [Int]) -> Int
 {
@@ -140,7 +135,6 @@ print("Small Array Test returned \(mul(smallArray)), Expected: 10")
 print("Same Array Test returned \(mul(sameArray)), Expected: 1")
 print("Medium Array Test returned \(mul(medArray)), Expected: 120")
 print("Large Array Test returned \(mul(largeArray)), Expected: 720")
-print()
 
 func count(arr : [Int]) -> Int
 {
@@ -154,7 +148,6 @@ print("Small Array Test returned \(count(smallArray)), Expected: 1")
 print("Same Array Test returned \(count(sameArray)), Expected: 3")
 print("Medium Array Test returned \(count(medArray)), Expected: 3")
 print("Large Array Test returned \(count(largeArray)), Expected: 5")
-print()
 
 func avg(arr : [Int]) -> Int
 {
@@ -177,7 +170,6 @@ print("Small Array Test returned \(avg(smallArray)), Expected: 10")
 print("Same Array Test returned \(avg(sameArray)), Expected: 1")
 print("Medium Array Test returned \(avg(medArray)), Expected: 5")
 print("Large Array Test returned \(avg(largeArray)), Expected: 4")
-print()
 
 func arrOp(arr : [Int], op : ([Int])->Int) -> Int
 {
@@ -200,7 +192,6 @@ print("Generic function using avg:")
 print("Generic function using avg on emptyArray returned \(arrOp(emptyArray, op: avg)), Expected: 0")
 print("Generic function using avg on zeroArray returned \(arrOp(zeroArray, op: avg)), Expected: 0")
 print("Generic function using avg on sameArray returned \(arrOp(sameArray, op: avg)), Expected: 1")
-print()
 
 //Points
 print("Points")
@@ -225,7 +216,6 @@ print("\(tup1) + \(tup4) = \(addTupPoints(tup1, p2 : tup4))")
 print("\(tup2) + \(tup3) = \(addTupPoints(tup2, p2 : tup3))")
 print("\(tup2) + \(tup4) = \(addTupPoints(tup2, p2 : tup4))")
 print("\(tup3) + \(tup4) = \(addTupPoints(tup3, p2 : tup4))")
-print()
 
 func subTupPoints(p1: Point, p2 : Point) -> Point
 {
@@ -239,7 +229,6 @@ print("\(tup1) - \(tup4) = \(subTupPoints(tup1, p2 : tup4))")
 print("\(tup2) - \(tup3) = \(subTupPoints(tup2, p2 : tup3))")
 print("\(tup2) - \(tup4) = \(subTupPoints(tup2, p2 : tup4))")
 print("\(tup3) - \(tup4) = \(subTupPoints(tup3, p2 : tup4))")
-print()
 
 let emptyDict = [String : [Int]]()
 let wrongDict = ["q": [4], "y": [9]]
